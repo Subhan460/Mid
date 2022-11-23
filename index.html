@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP20-BCS-098</title>
+    <!-- CSS only -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./custom.css">
+<script src="./custom.js"></script>
+</head>
+<body>
+    <!-- header -->
+    
+
+    <!-- LOGO -->
+    <nav class="navbar shadow-sm  navbar-expand-sm ">
+        <div class="container">
+            <div class="logo fl-left">
+                <img class="logo" src="techpocket.png" alt="logo">
+            </div>           
+                    
+             
+                    <div class="collapse navbar-collapse " id="collapsibleNavbar" >
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Computer</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Windows</a></li>
+                                    <li><a class="dropdown-item" href="#">MAC</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Internet</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Alternatives</a></li>
+                                    <li><a class="dropdown-item" href="#">Social Media</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BUSINESS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TECHNOLOGY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOW TO</a>
+                            </li>
+
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">LIFESTYLE</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Gaming</a></li>
+                                    <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                                    <li><a class="dropdown-item" href="#">Education</a></li>
+                                </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">GADGETS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PHONES</a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                
+            </nav>
+            
+
+            <!-- header -->
+
+            <!-- Search BAr -->
+            
+  <!-- Article -->
+  <div class="container">
+    <h1>WEB TECHNOLOGIES(OnClick event is on Show/Hide Button)</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis commodi architecto consectetur molestias maiores sed nesciunt odit, hic fugiat iure labore iste provident delectus ex modi sunt accusantium tempore et voluptatibus omnis molestiae quisquam soluta! Earum eius placeat autem eum voluptatem natus iure. Asperiores, minus. Nostrum consectetur incidunt officiis? Aut, facere laborum veniam natus cumque a quisquam, amet culpa atque distinctio omnis exercitationem error quos dolorum ea voluptatum? Illo ipsum numquam dolores earum officia labore sint vel magnam nemo, quas a doloribus quibusdam aliquid reiciendis temporibus error provident culpa deleniti minima, perspiciatis tenetur explicabo? Est pariatur amet porro enim ratione possimus molestiae. Iure, necessitatibus dignissimos repudiandae consequatur dolores soluta obcaecati voluptates dolorem distinctio cupiditate! Culpa eos debitis praesentium sed corporis, voluptas, ipsam quidem, ipsa magni dolor et? Repellat consectetur dolorum sapiente molestias at, earum ex sint laboriosam culpa. Illum soluta aspernatur aliquid impedit molestiae adipisci magni vel consequatur eaque omnis dolore molestias fugiat laboriosam, ipsum a quibusdam atque similique odio asperiores deserunt harum libero perspiciatis! Delectus consequatur vero quaerat perspiciatis sapiente, rem non ad voluptatibus, commodi eos numquam est voluptas incidunt magni. Magni odio eligendi reiciendis facere minus natus eveniet placeat delectus veritatis. Sed corporis voluptatem nulla porro dolor excepturi eos autem quos. Sed excepturi culpa quo sit ducimus odio, nulla pariatur tempore fugiat atque incidunt iusto a asperiores inventore provident cum cumque d oloribus sint rem id totam dignissimos doloremque aut? Commodi, laudantium?</p>
+</div>
+<button id="btn" onclick="toggleHide()">
+    SHOW/HIDE
+</button>
+<script>
+                let para = document.getElementById('para')
+                para.addEventListener('mouseover', function run(){
+                    console.log("Mouse is Inside the paraGarpah");
+                });
+                para.addEventListener('mouseout', function run(){
+                    console.log("Mouse is outside the paraGarpah");
+                });
+                
+
+
+
+
+    function toggleHide(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para')
+        if(para.style.display != 'none'){
+            para.style.display = 'none';
+        }
+        else{
+            para.style.display = 'block';
+        }
+    }
+</script>
+ 
+  <div class="container penci_sidebar right-sidebar">
+    <div id="main" class="penci-layout-list penci-main-sticky-sidebar">
+    <div class="theiaStickySidebar">
+    <div class="archive-box">
+    <div class="title-bar">
+    <span>Category:</span> <h1>Lifestyle</h1>
+    </div>
+    </div>
+    <ul class="penci-wrapper-data penci-grid"><li class="list-post pclist-layout">
+    <article id="post-17385" class="item hentry">
+    <div class="thumbnail">
+    <a data-bg="https://www.techpocket.org/wp-content/uploads/2022/11/featured-webtoon-585x390.jpg" class="penci-image-holder rocket-lazyload" style="" href="https://www.techpocket.org/webtoon-xyz/" title="Webtoon XYZ Alternatives, Overview, Pros, and Cons">
+    </a>
+    </div>
+    <div class="content-list-right content-list-center">
+    <div class="header-list-style">
+     <h2 class="penci-entry-title entry-title grid-title"><a href="">Webtoon XYZ Alternatives, Overview, Pros, and Cons</a></h2>
+    <div class="penci-hide-tagupdated">
+    <span class="author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <time class="entry-date published" datetime="2022-11-20T01:25:30+05:00">November 20, 2022</time> </div>
+    <div class="grid-post-box-meta">
+    <span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <span class="otherl-date"><time class="entry-date published" datetime="2022-11-20T01:25:30+05:00">November 20, 2022</time></span>
+    </div>
+    </div>
+    <div class="item-content entry-content">
+    <p>If you are seeking a game development app or an application that will allow you to watch Korean, Chinese, and&hellip;</p>
+    </div>
+    <div class="penci-readmore-btn penci-btn-make-button">
+    <a class="penci-btn-readmore" href="">Read more<i class="penci-faicon fa fa-angle-double-right"></i></a>
+    </div>
+    </div>
+    </article>
+    </li>
+    <li class="list-post pclist-layout">
+    <article id="post-17375" class="item hentry">
+    <div class="thumbnail">
+    <a data-bg="" class="penci-image-holder rocket-lazyload" style="" href="https://www.techpocket.org/animedao-2/" title="Animedao &#8211; The Best Site to Watch Anime For Free Online">
+    </a>
+    </div>
+    <div class="content-list-right content-list-center">
+    <div class="header-list-style">
+    <h2 class="penci-entry-title entry-title grid-title"><a href="">Animedao &#8211; The Best Site to Watch Anime For Free Online</a></h2>
+    <div class="penci-hide-tagupdated">
+    <span class="author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <time class="entry-date published" datetime="2022-11-17T16:18:07+05:00">November 17, 2022</time> </div>
+    <div class="grid-post-box-meta">
+    <span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <span class="otherl-date"><time class="entry-date published" datetime="2022-11-17T16:18:07+05:00">November 17, 2022</time></span>
+    </div>
+    </div>
+    <div class="item-content entry-content">
+    <p>Animedao : Recently, anima deleted its video section off its homepage and replaced it with the following message: &#8220;We are&hellip;</p>
+    </div>
+    <div class="penci-readmore-btn penci-btn-make-button">
+    <a class="penci-btn-readmore" href="">Read more<i class="penci-faicon fa fa-angle-double-right"></i></a>
+    </div>
+    </div>
+    </article>
+    </li>
+    <li class="list-post pclist-layout">
+    <article id="post-17368" class="item hentry">
+    <div class="thumbnail">
+    <a data-bg="" class="penci-image-holder rocket-lazyload" style="" href="https://www.techpocket.org/hongkongdoll/" title="Facts About HongKongDoll! Age, Bio, Boyfriend, Career">
+    </a>
+    </div>
+    <div class="content-list-right content-list-center">
+    <div class="header-list-style">
+    <h2 class="penci-entry-title entry-title grid-title"><a href="">Facts About HongKongDoll! Age, Bio, Boyfriend, Career</a></h2>
+    <div class="penci-hide-tagupdated">
+    <span class="author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <time class="entry-date published" datetime="2022-11-17T01:31:21+05:00">November 17, 2022</time> </div>
+    <div class="grid-post-box-meta">
+    <span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <span class="otherl-date"><time class="entry-date published" datetime="2022-11-17T01:31:21+05:00">November 17, 2022</time></span>
+    </div>
+    </div>
+    <div class="item-content entry-content">
+    <p>Hongkongdoll is extremely popular in both her own China and the United States. Her mother is Chinese, and her father&hellip;</p>
+    </div>
+    <div class="penci-readmore-btn penci-btn-make-button">
+    <a class="penci-btn-readmore" href="">Read more<i class="penci-faicon fa fa-angle-double-right"></i></a>
+    </div>
+    </div>
+    </article>
+    </li>
+    <li class="list-post pclist-layout">
+    <article id="post-17361" class="item hentry">
+    <div class="thumbnail">
+    <a data-bg="" class="penci-image-holder rocket-lazyload" style ="" href="" title="You Need To know About Manga18fx">
+    </a>
+    </div>
+    <div class="content-list-right content-list-center">
+    <div class="header-list-style">
+    <h2 class="penci-entry-title entry-title grid-title"><a href="">You Need To know About Manga18fx</a></h2>
+    <div class="penci-hide-tagupdated">
+    <span class="author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <time class="entry-date published" datetime="2022-11-15T21:43:31+05:00">November 15, 2022</time> </div>
+    <div class="grid-post-box-meta">
+    <span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <span class="otherl-date"><time class="entry-date published" datetime="2022-11-15T21:43:31+05:00">November 15, 2022</time></span>
+    </div>
+    </div>
+    <div class="item-content entry-content">
+    <p>Introduction: Manga18fx is where you should go if you enjoy reading comics and want to know them brought to life&hellip;</p>
+    </div>
+    <div class="penci-readmore-btn penci-btn-make-button">
+    <a class="penci-btn-readmore" href="">Read more<i class="penci-faicon fa fa-angle-double-right"></i></a>
+    </div>
+    </div>
+    </article>
+    </li>
+    <li class="list-post pclist-layout">
+    <article id="post-17352" class="item hentry">
+    <div class="thumbnail">
+    <a data-bg="" class="penci-image-holder rocket-lazyload" style="" href="" title="Wcoforever: Watch Anime and Cartoon Online">
+    </a>
+    </div>
+    <div class="content-list-right content-list-center">
+    <div class="header-list-style">
+    <h2 class="penci-entry-title entry-title grid-title"><a href="">Wcoforever: Watch Anime and Cartoon Online</a></h2>
+    <div class="penci-hide-tagupdated">
+    <span class="author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <time class="entry-date published" datetime="2022-11-13T21:30:18+05:00">November 13, 2022</time> </div>
+    <div class="grid-post-box-meta">
+    <span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="">Alex</a></span>
+    <span class="otherl-date"><time class="entry-date published" datetime="2022-11-13T21:30:18+05:00">November 13, 2022</time></span>
+    </div>
+    </div>
+    <div class="item-content entry-content">
+    <p>wcoforever: Recent years we have seen a rise in the popularity of anime, attracting fans from around the globe. If&hellip;</p>
+    </div>
+    <div class="penci-readmore-btn penci-btn-make-button">
+    <a class="penci-btn-readmore" href="">Read more<i class="penci-faicon fa fa-angle-double-right"></i></a>
+    </div>
+    </div>
+    </article>
+    </li>
+    <li class="list-post pclist-layout">
+    <article id="post-17348" class="item hentry">
+    <div class="thumbnail">
+    <a data-bg="" class="penci-image-holder rocket-lazyload" href="" title="5 Reasons to Vacation in Arizona">
+    </a>
+    </div>
+    <div class="content-list-right content-list-center">
+    <div class="header-list-style">
+    <h2 class="penci-entry-title entry-title grid-title"><a href="">5 Reasons to Vacation in Arizona</a></h2>
+    <div class="penci-hide-tagupdated">
+    <span class="author-italic author vcard">by <a class="url fn n" href="">SOUL</a></span>
+    <time class="entry-date published" datetime="2022-11-12T04:45:31+05:00">November 12, 2022</time> </div>
+    <div class="grid-post-box-meta">
+    <span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="">SOUL</a></span>
+    <span class="otherl-date"><time class="entry-date published" datetime="2022-11-12T04:45:31+05:00">November 12, 2022</time></span>
+    </div>
+    </div>
+    <div class="item-content entry-content">
+    <p>Arizona is one of the most stunning states in America. World-renowned as the home of the Grand Canyon, there are&hellip;</p>
+    </div>
+    <div class="penci-readmore-btn penci-btn-make-button">
+    <a class="penci-btn-readmore" href="">Read more<i class="penci-faicon fa fa-angle-double-right"></i></a>
+    </div>
+    </div>
+    </article>
+    </li>
+    <li class="list-post pclist-layout">
+    <article id="post-17343" class="item hentry">
+    <div class="thumbnail">
+    <a data-bg="" class="penci-image-holder rocket-lazyload" href="" title="Myreadingmanga Facts and Features – Best 20 Alternatives">
+    </a>
+    </div>
+    <div class="content-list-right content-list-center">
+    
+    <div class="penci-readmore-btn penci-btn-make-button">
+    <a class="penci-btn-readmore" href="">Read more<i class="penci-faicon fa fa-angle-double-right"></i></a>
+    </div>
+    </div>
+    </article>
+    </li>
+    </ul>
+<!-- Article end -->
+
+ <!-- footer -->
+
+   <!-- Remove the container if you want to extend the Footer to full width. -->
+
+   <div class="my-5">
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">SevenTech</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Terms And Conditions</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Privacy Policy</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Write Us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Contact Us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <hr class="my-5" />
+  
+      
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2020 TechPocket:
+        <a class="text-white" href="">- All Rights Reserved.</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container --> 
+
+  <!-- footer end -->
+</body>
+</html>
