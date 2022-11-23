@@ -1,0 +1,92 @@
+.logo{
+    width: 300px;
+    margin-right: 5px;
+    margin-left: -5px;
+    padding: 10px;
+}
+.footer{
+    padding: 30px 0;
+    background-color: black;
+    height: 150px;
+}
+
+.footer p,
+.footer .socail{width: 50%}
+
+.footer .socail{text-align: right}
+
+.footer .socail i{
+    margin: 5px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    color: black;
+    background-color: black;
+}
+.container{
+    font-weight: bold;
+    color: black;
+}
+li{
+    font-weight: bold;
+    color: black;
+}
+/* .ft1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+
+} */
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex1 {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.flex {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1,h3{
+    color: rgb(182, 21, 21);
+}
+
+fix{
+    width:90%;
+    height: 10vh;
+}
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
